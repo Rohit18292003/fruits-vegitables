@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <dn.jlink rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+        <link rel='stylesheet'
+            href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+
+
+        <!-- Font Awesome style="margin-left:600px;" -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+        <!-- MDB -->
+        <link href="https://csdelivr.net/npm/mdb-ui-kit@8.2.0/css/mdb.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+
+        <style>
+            :root {
+                --yellow: #f12536;
+                --light-yellow: #ff8080;
+                --black: #130f40;
+                --light-color: rgb(10, 5, 5);
+                --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+                --border: .1rem solid rgba(0, 0, 0, .1);
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                outline: none;
+                border: none;
+                text-decoration: none;
+                text-transform: capitalize;
+                transition: .2s linear;
+            }
+
+            html {
+                font-family: 'Poppins', sans-serif;
+
+                overflow-x: hidden;
+                scroll-padding-top: 7rem;
+                scroll-behavior: smooth;
+            }
+
+            .contact .row {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1.5rem;
+            }
+
+            .contact .row .map {
+                flex: 1 1 42rem;
+                width: 100%;
+                padding: 2rem;
+                box-shadow: var(--box-shadow);
+                border: var(--border);
+                border-radius: .5rem;
+            }
+
+            .contact .row form {
+                padding: 2rem;
+                flex: 1 1 42rem;
+                box-shadow: var(--box-shadow);
+                border: var(--border);
+                text-align: center;
+                border-radius: .5rem;
+            }
+
+            .contact .row form h3 {
+                font-size: 2rem;
+                color: var(--black);
+                padding-bottom: 1rem;
+            }
+
+            .contact .row form .box {
+                width: 100%;
+                border-radius: .5rem;
+                padding: 1rem 1.2rem;
+                font-size: 1.2rem;
+                text-transform: none;
+                border: var(--border);
+                margin: .7rem 0;
+            }
+
+            .contact .row form textarea {
+                height: 12rem;
+                resize: none;
+            }
+
+
+            @media (max-width:991px) {
+                html {
+                    font-size: 55%;
+                }
+
+                .header {
+                    padding: 2rem;
+                }
+
+                .header.active {
+                    padding: 2rem;
+                }
+
+                section {
+                    padding: 2rem;
+                }
+
+            }
+
+            @media (max-width:450px) {
+                html {
+                    font-size: 50%;
+                }
+
+                iframe {
+                    height: 250px;
+                    padding: 2px 10px 2px 0px;
+                }
+
+
+
+            }
+
+            /* view demo template block*/
+            .button-69 {
+                background-color: initial;
+                background-image: linear-gradient(#8614f8 0, #760be0 100%);
+                border-radius: 5px;
+                border-style: none;
+                box-shadow: rgba(245, 244, 247, .25) 0 1px 1px inset;
+                color: #fff;
+                cursor: pointer;
+                display: inline-block;
+                font-family: Inter, sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                height: 50px;
+
+                margin-left: -4px;
+                margin-top: 30px;
+
+                outline: 0;
+                text-align: center;
+                transition: all .3s cubic-bezier(.05, .03, .35, 1);
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+                vertical-align: bottom;
+                width: 190px;
+            }
+
+            .button-69:hover {
+                opacity: .7;
+            }
+
+            @media screen and (max-width: 1000px) {
+                .button-69 {
+                    font-size: 14px;
+                    height: 50px;
+                    line-height: 55px;
+                    width: 150px;
+                    
+                }
+            }
+        </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="dashboard.php" id="animate-charcter">
+                <img src="assets/logo.jpg" alt="" width="80" height="58" class="d-inline-block">
+                fruits & vegitables
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="dashboard.php"
+                            style="color: black; text-decoration: solid;">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="buyer_dashboard.php">order now</a>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="about.html">about us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="contact.html">contact
+                            us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="login.php" style="margin-left:600px;">login
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Separate registration options -->
+                        <a class="nav-link " aria-current="page" href="register.php">sign up
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- contact form -->
+    <center id="c-d-b">
+        <h1 id="heading">Contact Details</h1>
+    </center>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10717.724309640453!2d76.56170682740266!3d18.40762346247044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcf83f3b0f81e69%3A0xbea444e4bac8ad8d!2sCOCSIT%20College!5e0!3m2!1sen!2sin!4v1708181017667!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0; padding-top:20px ;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col">
+                <section class="contact" id="contact">
+                    <div class="row">
+                        <!-- Contact us Form -->
+                        <!-- <div class="visme_d" data-title="portfolio" data-url="z4rg1jyv-portfolio" data-domain="forms"
+            data-full-page="false" data-min-height="500px" data-form-id="39791"></div>
+          <script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script> -->
+                        <form action="post" name="google-sheet">
+                            <h3>get in touch</h3>
+                            <input type="text" placeholder="Your name" class="box" name="firstname">
+                            <input type="email" placeholder="Your email" class="box" name="Gmail" required>
+                            <input type="tel" placeholder="Mobile number" class="box" name="Mobile number">
+                            <textarea placeholder="Your message" class="box" cols="30" rows="10"
+                                name="subject"></textarea>
+                            <input type="submit" value="send message" class="button-69">
+                            <button type="reset" class="btn btn-danger"
+                                style="height: 50px; font-size: 13px; background-color: red;">Clean form</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-white" style="background-color: #1c2331; margin-top:20px;">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-between p-4" style="background-color: #386bc0">
+            <!-- Left -->
+            <div class="me-5">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold">Company name</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <p>
+                            your premier online destination for the freshest fruits and vegetables! Founded in 2024, we
+                            are passionate about providing our customers with high-quality, organic produce straight
+                            from local farms.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold">Products</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <p>
+                            <a href="buyer_dashboard.php" class="text-white">Fruits</a>
+                        </p>
+                        <p>
+                            <a href="buyer_dashboard.php" class="text-white">Vegitables</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white"></a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white"></a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold">Useful links</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <p>
+                            <a href="buyer_dashboard.php" class="text-white">Your Account</a>
+                        </p>
+
+
+                        <p>
+                            <a href="contact.html" class="text-white">Help</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold">Contact</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <p><i class="fi fi-sr-home"></i> Near cocsit</p>
+                        <p><i class="fi fi-sr-envelope"></i> fruits@.com</p>
+                        <p><i class="fi fi-sr-phone-call"></i></i> +91 1234567</p>
+                        <p><i class="fas fa-print mr-3"></i> + 0123456789</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+</body>
+
+</html>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwBSCkyV-heXRyfUc-1tI6rDn__unR9yzCH4ELWDpSycMNW3qkzFgaPBqMZCszQDZZL/exec'
+    const form = document.forms['google-sheet']
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>

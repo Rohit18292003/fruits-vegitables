@@ -1,0 +1,125 @@
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+  
+  }
+  
+  
+  /* main page*/
+  
+  
+  
+  
+  .content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  }
+  
+  
+  
+  .outerdiv{
+  height: 500px;
+  width: 100%;
+  
+  
+  padding: 80px 0px 80px 0px;
+  
+  
+  }
+  .innerdiv{
+  text-align: center;
+  
+  
+  }
+  #advertise{
+  padding: 80px 0px 0px 70px;
+  font-size: 20px;
+  
+  
+  }
+  #advertise p {
+  text-transform:none;
+  }
+  
+  
+  @media (min-width:500px){
+  #for-mobile{
+  align-items: center;
+  }
+  }
+  
+  
+  
+  
+  /* button css */
+  /* CSS */
+  .button-12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  border: none;
+  
+  background: #6E6D70;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0,
+  0, 0, 0.12);
+  color: #DFDEDF;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  }
+  
+  .button-12:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px
+  rgba(58, 108, 217, 0.5);
+  outline: 0;
+  }
+  
+  
+  /* contact page */
+  
+  input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  }
+  
+  input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+  background-color: #45a049;
+  }
+  
+  
+  input, textarea,select{
+  background-color: black;
+  color: white;
+  }
+  label{
+  color: white;
+  }
